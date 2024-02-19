@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
     }
   })
 
-const upload = multer({ storage:storage }).single('photo');o
+const upload = multer({ storage:storage }).single('photo');
 postsRouter.post("/",auth,async(req,res)=>{
     console.log(req.body)
     try{
